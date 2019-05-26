@@ -1,5 +1,4 @@
 <?php
-require(TEMPLATE_DIR . 'renderSlide.php');
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
 $uri = '/' . trim(str_replace($uri, '', $_SERVER['REQUEST_URI']), '/');
 $uri = urldecode($uri);
@@ -19,7 +18,7 @@ $renderer = new \Contentful\RichText\Renderer();
 
 <!DOCTYPE html>
 <html lang="en">
-<?php renderHead($project->title . ' | Max Korndoerfer', $project->seoDescription) ?>
+<?php renderHead($project->title . ' | Max Korndoerfer', $project->seoDescription, false, $project->images[0]->getFile()->getUrl()) ?>
 
 <body>
     <div class="project">

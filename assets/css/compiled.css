@@ -1,28 +1,7 @@
-@font-face {
-  font-family: ArchCondensed;
-  src: url(./fonts/CondensedBold.ttf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: ArchCondensed;
-  src: url(./fonts/Condensed.ttf);
-  font-weight: normal;
-}
-@font-face {
-  font-family: Arch;
-  src: url(./fonts/Bold.otf);
-  font-weight: bold;
-}
-@font-face {
-  font-family: Arch;
-  src: url(./fonts/Book.otf);
-  font-weight: normal;
-}
-@font-face {
-  font-family: Arch;
-  src: url(./fonts/Light.otf);
-  font-weight: light;
-}
+@import "fonts.less";
+@import "navigation.less";
+@import "office.less";
+@import "footer.less";
 .home {
   padding: 24px;
 }
@@ -77,27 +56,6 @@
   color: #858585;
   margin: 8px 0 0;
   font-size: 12px;
-}
-#office ul {
-  margin: 0;
-}
-#office img {
-  width: 100%;
-}
-#office .divider {
-  border-top: 1px solid transparent;
-  margin-bottom: 59px;
-}
-footer {
-  display: flex;
-  margin: 32px 0 24px;
-  font-size: 14px;
-}
-footer a {
-  color: #696969;
-}
-footer a:hover {
-  color: #202020;
 }
 body {
   font-family: 'Merriweather', serif;

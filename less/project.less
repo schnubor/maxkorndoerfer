@@ -1,102 +1,29 @@
-.title {
-    margin-bottom: 24px;
-    //font-family: @hind;
-    font-family: @archCond;
-    font-size: 20px;
-    line-height: .7;
+.project {
+    padding: 24px;
 
-    &.top {
-        @media screen and (max-width: 575px){
-            margin-top: 24px;
+    .title {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+    }
+
+    .description {
+        font-style: italic;
+        color: @grey;
+    }
+
+    .image {
+        margin-bottom: 24px;
+
+        img {
+            width: 100%;
         }
-        
-    }
-}
-
-p {
-    font-family: @montserrat;
-    font-size: 14px;
-}
-
-h4 {
-    //font-family: @hind;
-    font-family: @montserrat;
-}
-
-.divider {
-    border-top: 1px solid transparent;
-    margin-bottom: 24px;
-}
-
-.more {
-    background-color: #d8d8d8;
-    padding-top: 20px;
-}
-
-.more-wrapper {
-    width: ~"calc(100% + 16px)";
-    margin-left: -8px;
-}
-
-.more-title {
-    font-size: 20px;
-}
-
-.arrow-wrapper {
-    position: relative;
-}
-
-.slide {
-    margin: 8px;
-
-    .subtitle {
-        margin-top: 8px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        color: @red;
-    }
-}
-
-.slick-slider img {
-    width: 100%;
-}
-
-.slick-dots {
-    position: relative;
-    bottom: -15px;
-}
-
-.slick-dots li button:before {
-    font-size: 10px;
-}
-
-.slick-dotted.slick-slider {
-    margin-bottom: 40px;
-}
-
-.slick-dots li.slick-active button:before {
-    color: @red;
-}
-
-.arrow {
-    position: absolute;
-    top: ~"calc(50% - 32px)";
-    height: 32px;
-    width: 32px;
-    color: white;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: rgba(0,0,0,.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &.prev {
-        left: 10px;
     }
 
-    &.next {
-        right: 10px;
+    .caption {
+        font-style: italic;
+        color: @grey;
+        margin: 8px 0 0;
+        font-size: 12px;
     }
 }

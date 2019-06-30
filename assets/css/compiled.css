@@ -1,37 +1,19 @@
-@import "fonts.less";
-@import "navigation.less";
-@import "office.less";
-@import "footer.less";
 .home {
   padding: 24px;
 }
 .home .title {
-  font-size: 24px;
+  font-size: 30px;
   margin-top: 60px;
   margin-bottom: 24px;
+  font-weight: 600;
 }
 .home .navigation {
   list-style-type: none;
   padding: 0;
 }
 .home .navigation .navItem {
-  font-size: 20px;
+  font-size: 24px;
   margin: 6px 0;
-}
-#contact ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#contact ul li {
-  margin: 8px 0;
-}
-#contact ul li.last {
-  margin-bottom: 20px;
-}
-#contact ul .option {
-  display: inline-block;
-  width: 40px;
 }
 .project {
   padding: 24px;
@@ -44,9 +26,11 @@
 .project .description {
   font-style: italic;
   color: #858585;
+  font-size: 14px;
+  line-height: 21px;
 }
 .project .image {
-  margin-bottom: 24px;
+  margin-bottom: 60px;
 }
 .project .image img {
   width: 100%;
@@ -58,15 +42,15 @@
   font-size: 12px;
 }
 body {
-  font-family: 'Merriweather', serif;
+  font-family: 'EB Garamond', serif;
   color: #111111;
   background-color: white;
 }
 a {
-  color: #80b7db;
+  color: #858585;
   text-decoration: none !important;
 }
 a:hover,
 a:active {
-  color: #80b7db;
+  color: #111111;
 }

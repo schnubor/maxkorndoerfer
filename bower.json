@@ -16,9 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.3.1",
-    "bootstrap-css-only": "^4.2.1",
-    "components-font-awesome": "^5.4.2",
-    "slick-carousel": "^1.8.1"
+    "bootstrap-css-only": "^4.2.1"
   }
 }

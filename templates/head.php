@@ -6,8 +6,6 @@
     <meta name="googlebot" content="index,follow">
     <link rel="stylesheet" href="/bower_components/bootstrap-css-only/css/bootstrap.min.css">
     <link rel="stylesheet" href="/bower_components/components-font-awesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="/assets/css/compiled.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">

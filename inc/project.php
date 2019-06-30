@@ -23,7 +23,7 @@ $renderer = new \Contentful\RichText\Renderer();
 <body>
     <div class="project">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <a href="/" class="back">&larr; back</a>
                 <h1 class="title"><?php echo $project->title ?></h1>
                 <div class="description">
@@ -31,7 +31,7 @@ $renderer = new \Contentful\RichText\Renderer();
                 </div>
             </div>
 
-            <div class="col-md-9">
+            <div class="col-md-8">
                 <?php
                 foreach ($project->images as $asset) {
                     echo '<div class="image">';

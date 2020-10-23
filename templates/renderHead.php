@@ -15,7 +15,7 @@
         echo "\t<meta property=\"og:title\" content=\"" . $title . "\">\n";
         echo "\t<meta property=\"og:image\" content=\"" . $ogImage . "\">\n";
         echo "\t<meta property=\"og:description\" content=\"" . $description . "\">\n";
-        echo "\t<meta property=\"og:site_name\" content=\"Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich\">\n";
+        echo "\t<meta property=\"og:site_name\" content=\"Max Korndörfer | Freischaffender Fotograf Berlin\">\n";
         echo $noindex ? "\t<meta name=\"robots\" content=\"noindex,nofollow\">\n" : '';
         echo "</head>";
     }

@@ -10,7 +10,7 @@ $renderer = new \Contentful\RichText\Renderer();
 
 <!DOCTYPE html>
 <html lang="en">
-    <?php renderHead( 'Datenschutz | Säum Architekten Berlin | Sanierung und Planung im denkmalgeschützten Bereich', 'Architekturbüro zur Sanierung und Planung im denkmalgeschützten Bereich', true ) ?>
+    <?php renderHead( 'Datenschutz | Max Korndörfer', 'Freischaffender Fotograf Berlin', true ) ?>
 
     <body>
         <?php include( TEMPLATE_DIR . '/navigation.php') ?>

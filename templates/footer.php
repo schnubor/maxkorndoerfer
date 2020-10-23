@@ -3,7 +3,7 @@
         <hr>
         <div class="row">
             <div class="col-6">
-                © <span>SÄUM Architekten</span>
+                © <span>Max Korndörfer</span>
             </div>
             <div class="col-6 text-right">
                 <a href="/impressum">Impressum</a>

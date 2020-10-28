@@ -19,7 +19,7 @@ try {
         <ul class="navigation">
             <?php foreach ($projects as $project) { ?>
                 <li class="navItem">
-                    <a href="/project/<?php echo $project->getId() ?>">
+                    <a href="/project/<?php echo $project->slug ?>">
                         <?php echo $project->title ?>
                     </a>
                 </li>

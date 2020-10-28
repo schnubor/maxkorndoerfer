@@ -2,15 +2,29 @@
 $uri = rtrim(dirname($_SERVER["SCRIPT_NAME"]), '/');
 $uri = '/' . trim(str_replace($uri, '', $_SERVER['REQUEST_URI']), '/');
 $uri = urldecode($uri);
-$projectId = substr($uri, strrpos($uri, '/') + 1);
+
+$projectSlug = substr($uri, strrpos($uri, '/') + 1);
+
 $query = new \Contentful\Delivery\Query();
 $query->setContentType('project');
 
-try {
-    $project = $contentfulClient->getEntry($projectId);
-    $allProjects = $contentfulClient->getEntries($query);
-} catch (\Contentful\Core\Exception\NotFoundException $exception) {
-    debug_to_console('Contentful error: ' . $exception);
+if(!isset($projects)) {
+    $query = new \Contentful\Delivery\Query();
+    $query->setContentType('project');
+    try {
+        $projects = $contentfulClient->getEntries($query);
+    } catch (\Contentful\Core\Exception\NotFoundException $exception) {
+        debug_to_console('Contentful error: ' . $exception);
+    }
+}
+
+$project = null;
+
+foreach( $projects as $contentfulProject ) {
+    if ($projectSlug == $contentfulProject->slug) {
+        $project = $contentfulProject;
+        break;
+    }
 }
 
 $renderer = new \Contentful\RichText\Renderer();
